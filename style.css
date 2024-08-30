@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body{
+    color: gray;
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(20,20,20);
+}
+
+
+.container{
+    display: inline-block;
+    margin: 20%;
+}
+
+.text{
+    overflow: hidden;
+    font-size: 1.5rem;
+    border-radius: 2em solid orange;
+    white-space: nowrap;
+    font-weight: 700;
+    animation: typing 4s steps(40, end) infinite;
+}
+
+@keyframes typing{
+from{
+        width: 0;
+
+    }
+to{
+    width: 100%;
+}
+}
+
+
+@media screen and (max-width:576px) {
+
+    .text{
+        width: 100%;
+        font-size: 9px;
+    }
+    body{
+        width: 100%;
+
+    }
+    .container{
+        width: 100%;
+        /* display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center; */
+    }
+    @keyframes typing{
+from{
+        width: 0;
+
+    }
+to{
+    width: 110%;
+}
+}
+}
